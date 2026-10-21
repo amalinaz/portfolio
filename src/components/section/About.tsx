@@ -5,7 +5,7 @@ import AsciiMorphText from '../AsciiMorphText';
 import TypewriterCarousel from '../TypewriterCarousel';
 import { useDarkMode } from '../../contexts/DarkModeContext';
 import { useThemeColors, withAlpha } from '../../hooks/useThemeColors';
-import { aboutMeJournalWebp800, aboutMeJournalWebp400, profile1, profile2, profile3, stickers as stickerImages } from '../../assets';
+import { aboutMeJournalWebp800, aboutMeJournalWebp400, profile1, profile2, stickers as stickerImages } from '../../assets';
 
 
 const About = () => {
@@ -25,11 +25,11 @@ const About = () => {
 
   const profileImages = [
     { src: profile1, caption: "photo 1" },
-    { src: profile2, caption: "photo 2" },
-    { src: profile3, caption: "photo 3" }
+    { src: profile2, caption: "photo 2" }
   ];
 
-  const fullAsciiArt = `⢀⣤⣄⡀        ⁺
+  const fullAsciiArt = 
+`⢀⣤⣄⡀        ⁺
 ⣇⠈⠙⠿⣦⣀⣀⣀⣤⡴⠶⠛⢓⡄
 ⠈⠛⠛⠛⢋⡿⠋⠻⣯⡑⠒⠛⠋
 ⠀ ⁺⠀⢠⡟⠀⠀⠀⠘⣿⣆⠀    ⁺
