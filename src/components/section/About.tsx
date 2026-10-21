@@ -20,8 +20,6 @@ const About = () => {
 
   const roles = [
     'Software Engineer',
-    'Full-Stack Developer',
-    'Systems Engineer',
     'Frontend Developer',
   ];
 
@@ -31,16 +29,16 @@ const About = () => {
     { src: profile3, caption: "photo 3" }
   ];
 
-  const fullAsciiArt = `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⢠⡾⠲⠶⣤⣀⣠⣤⣤⣤⡿⠛⠿⡴⠾⠛⢻⡆⠀⠀⠀
-⠀⠀⠀⣼⠁⠀⠀⠀⠉⠁⠀⢀⣿⠐⡿⣿⠿⣶⣤⣤⣷⡀⠀⠀
-⠀⠀⠀⢹⡶⠀⠀⠀⠀⠀⠀⠈⢯⣡⣿⣿⣀⣰⣿⣦⢂⡏⠀⠀
-⠀⠀⢀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠹⣍⣭⣾⠁⠀⠀
-⠀⣀⣸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣸⣧⣤⡀
-⠈⠉⠹⣏⡁⠀⢸⣿⠀⠀⠀⢀⡀⠀⠀⠀⣿⠆⠀⢀⣸⣇⣀⠀
-⠀⠐⠋⢻⣅⡄⢀⣀⣀⡀⠀⠯⠽⠂⢀⣀⣀⡀⠀⣤⣿⠀⠉⠀
-⠀⠀⠴⠛⠙⣳⠋⠉⠉⠙⣆⠀⠀⢰⡟⠉⠈⠙⢷⠟⠈⠙⠂⠀
-⠀⠀⠀⠀⠀⢻⣄⣠⣤⣴⠟⠛⠛⠛⢧⣤⣤⣀⡾⠀⠀⠀⠀⠀`;
+  const fullAsciiArt = `⢀⣤⣄⡀        ⁺
+⣇⠈⠙⠿⣦⣀⣀⣀⣤⡴⠶⠛⢓⡄
+⠈⠛⠛⠛⢋⡿⠋⠻⣯⡑⠒⠛⠋
+⠀ ⁺⠀⢠⡟⠀⠀⠀⠘⣿⣆⠀    ⁺
+⠀⠀⠀⣾⡇⠀⠀⠀⠀⢸⡿   ⟡ 
+⠀⠀⠀⣿⣷⠀⠀⠀⠀⡼⠁ 
+⠀⠀⠀⢸⣿⡄⠀⠀⠀⢷⣄
+⟡⠀⠀⢸⣿⠃⠀⠀⠀⠀⠉⠀⠀⁺
+⠀⠀⠠⠞⠁`;
+
 
   // Typewriter effect for ASCII art
   useEffect(() => {
@@ -213,7 +211,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row justify-between items-start max-w-6xl mx-auto gap-8">
             <div className="text-left w-full md:w-auto">
               <div className="ascii-container justify-start text-3xl md:text-4xl lg:text-5xl">
-                <AsciiMorphText text="Hi, I'm Your Name" />
+                <AsciiMorphText text="Hi, I'm Karin" />
               </div>
               <div className="hero-subtitle justify-start text-base md:text-lg lg:text-xl mt-2">
                 <div className="flex flex-wrap items-center justify-start">

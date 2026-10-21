@@ -155,7 +155,7 @@ mobile/web/version.json
 mobile/web/index.html
 mobile/web/main.dart.js
 mobile/web/flutter.js
-mobile/web/favicon.png
+mobile/web/webicon.png
 mobile/web/icons/Icon-192.png
 mobile/web/icons/Icon-512.png
 mobile/web/manifest.json

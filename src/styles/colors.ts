@@ -13,32 +13,32 @@ export const colors = {
 
   // Primary Pink Palette
   pink: {
-    25: '#FEF8FA',        // Very light pink transition color (rgb(254 248 250))
-    50: '#FFF5F7',        // Light pink background
-    100: '#FAE8ED',       // Lavender blush
-    200: '#FDD5DF',       // Mimi pink
-    300: '#EABEC3',       // Main dusty pink
-    400: '#D9A5AC',       // Darker dusty pink
-    500: '#C88B95',       // Even darker dusty pink
-    600: '#B8727C',       // Strong dusty pink
-    700: '#A6707B',       // Navigation text
-    800: '#8B5A65',       // Main text pink (WCAG AA)
-    900: '#6B4C57',       // Darkest pink
+    25:  '#FEF8FA', // Whisper Pink
+    50:  '#FFF5F7', // Blush White
+    100: '#FAE8ED', // Pale Blush
+    200: '#F8BBD0', // Baby Pink
+    300: '#F48FB1', // Rose Pink
+    400: '#F06292', // Warm Pink
+    500: '#D6336C', // Deep Rose
+    600: '#C2185B', // Raspberry Pink
+    700: '#AD1457', // Dark Raspberry
+    800: '#8B5A65', // Muted Mauve
+    900: '#6B4C57', // Dusty Plum
   },
 
   // Dark theme colors
   dark: {
-    50: '#F8FAFC',        // Almost white
-    100: '#F1F5F9',       // Very light gray
-    200: '#E2E8F0',       // Light gray
-    300: '#CBD5E1',       // Medium light gray
-    400: '#94A3B8',       // Medium gray
-    500: '#64748B',       // Neutral gray
-    600: '#475569',       // Medium dark gray
-    700: '#334155',       // Dark gray
-    800: '#1E293B',       // Very dark gray
-    900: '#0F172A',       // Almost black
-    950: '#020617',       // Darkest
+    50: '#F8FAFC',        
+    100: '#F1F5F9',       
+    200: '#E2E8F0',       
+    300: '#CBD5E1',      
+    400: '#94A3B8',       
+    500: '#64748B',       
+    600: '#475569',       
+    700: '#334155',       
+    800: '#1E293B',       
+    900: '#0F172A',       
+    950: '#020617',       
   },
 
   // Semantic colors
@@ -98,7 +98,7 @@ export const colors = {
     light: {
       primary: 'rgba(234, 190, 195, 0.1)',
       hover: 'rgba(234, 190, 195, 0.2)',
-      active: '#EABEC3',
+      active: '#F06292',
       focus: 'rgba(234, 190, 195, 0.3)',
     },
     dark: {
@@ -135,23 +135,23 @@ export const colors = {
   button: {
     primary: {
       light: {
-        background: '#EABEC3',
+        background: '#D6336C',
         text: '#FFFFFF',
-        hover: '#D9A5AC',
-        shadow: 'rgba(234, 190, 195, 0.3)',
+        hover: '#C2185B',
+        shadow: 'rgba(214, 51, 108, 0.25)',
       },
       dark: {
         background: '#EABEC3',
-        text: '#0A0F1B',
-        hover: '#FDD5DF',
-        shadow: 'rgba(234, 190, 195, 0.4)',
+        text: '#1F2937',
+        hover: '#F8BBD0',
+        shadow: 'rgba(234, 190, 195, 0.25)',
       },
     },
     secondary: {
       light: {
-        background: 'rgba(255, 255, 255, 0.8)',
-        text: '#1F2937',
-        border: '#EABEC3',
+        background: 'rgba(255, 245, 247, 0.9)',
+        text: '#6B4C57',
+        border: '#F8BBD0',
         hover: '#FAE8ED',
       },
       dark: {
@@ -164,9 +164,9 @@ export const colors = {
     outline: {
       light: {
         background: 'transparent',
-        text: '#C88B95',
-        border: '#EABEC3',
-        hover: '#FAE8ED',
+        text: '#C2185B',
+        border: '#F8BBD0',
+        hover: '#FFF5F7',
       },
       dark: {
         background: '#1F2937',
@@ -176,7 +176,6 @@ export const colors = {
       },
     },
   },
-
   // Card colors
   card: {
     light: {
@@ -214,12 +213,13 @@ export const colors = {
     aurora: {
       dark: '#FF94B4',       // Pink aurora for dark mode
       light: {
-        1: '#FBCFE8',        // Light pink aurora stop 1
-        2: '#FECDD3',        // Light pink aurora stop 2
-        3: '#FED7E2',        // Light pink aurora stop 3
+        1: '#F8BBD0',        // Light pink aurora stop 1
+        2: '#FAE8ED',        // Light pink aurora stop 2
+        3: '#FFF5F7',        // Light pink aurora stop 3
       }
     }
   },
+
 } as const;
 
 // Type definitions for better TypeScript support

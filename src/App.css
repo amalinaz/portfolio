@@ -17,15 +17,18 @@
 :root {
   /* Color Palette - Updated to use centralized color system */
   /* Pink palette - from colors.ts */
+  --color-pink-25: #FEF8FA;        /* Light pink background */
   --color-pink-50: #FFF5F7;        /* Light pink background */
   --color-pink-100: #FAE8ED;       /* Lavender blush */
-  --color-pink-200: #FDD5DF;       /* Mimi pink */
-  --color-pink-300: #EABEC3;       /* Main dusty pink */
-  --color-pink-400: #D9A5AC;       /* Darker dusty pink */
-  --color-pink-500: #C88B95;       /* Even darker dusty pink */
-  --color-pink-600: #B8727C;       /* Strong dusty pink */
-  --color-pink-700: #A6707B;       /* Navigation text */
+  --color-pink-200: #F8BBD0;       /* Mimi pink */
+  --color-pink-300: #F48FB1;       /* Main Rose Pink */
+  --color-pink-400: #F06292;       /* Darker Warm Pink */
+  --color-pink-500: #D6336C;       /* Deep Rose*/
+  --color-pink-600: #C2185B;       /* Raspberry Pink */
+  --color-pink-700: #AD1457;       /* Navigation text */
   --color-pink-800: #8B5A65;       /* Main text pink (WCAG AA) */
+  --color-pink-800: #6B4C57;       /* Main text pink (WCAG AA) */
+  
 
   /* Dark theme colors */
   --color-dark-800: #1E293B;       /* Very dark gray */
@@ -38,9 +41,9 @@
   /* Legacy variables for backward compatibility */
   --lavender-blush: var(--color-pink-100);
   --mimi-pink: var(--color-pink-200);
-  --dusty-pink: var(--color-pink-300);
-  --dusty-pink-dark: var(--color-pink-400);
-  --dusty-pink-darker: var(--color-pink-500);
+  --rose-pink: var(--color-pink-300);
+  --rose-pink-dark: var(--color-pink-400);
+  --rose-pink-darker: var(--color-pink-500);
   --white: var(--color-white);
   --light-pink-bg: var(--color-pink-50);
   --text-pink: var(--color-pink-800);
@@ -70,7 +73,7 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid var(--dusty-pink);
+  outline: 2px solid var(--rose-pink);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -265,7 +268,7 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--dusty-pink-darker);
+  background: var(--rose-pink-darker);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -281,7 +284,7 @@ body {
 
 .nav-tab.active::after {
   width: 100%;
-  background: var(--dusty-pink-darker);
+  background: var(--rose-pink-darker);
 }
 
 /* Main Content */
@@ -313,7 +316,7 @@ body {
 .section h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, var(--dusty-pink) 0%, var(--dusty-pink-darker) 100%);
+  background: linear-gradient(135deg, var(--rose-pink) 0%, var(--rose-pink-darker) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -372,7 +375,7 @@ body {
 }
 
 .hero-subtitle span {
-  background: linear-gradient(135deg, var(--dusty-pink) 0%, var(--dusty-pink-darker) 100%);
+  background: linear-gradient(135deg, var(--rose-pink) 0%, var(--rose-pink-darker) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -410,8 +413,8 @@ body {
 
 .hero-action-btn {
   background: transparent;
-  border: 2px solid var(--dusty-pink);
-  color: var(--dusty-pink-darker);
+  border: 2px solid var(--rose-pink);
+  color: var(--rose-pink-darker);
   padding: 0.4rem 1rem;
   font-size: 0.85rem;
   font-weight: 500;
@@ -434,14 +437,14 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: var(--dusty-pink);
+  background: var(--rose-pink);
   transition: left 0.3s ease;
   z-index: -1;
 }
 
 .hero-action-btn:hover {
   color: var(--white);
-  border-color: var(--dusty-pink-darker);
+  border-color: var(--rose-pink-darker);
   transform: translateX(2px);
 }
 
@@ -451,17 +454,17 @@ body {
 
 /* Dark mode styles for hero action buttons */
 .dark .hero-action-btn {
-  color: #FDD5DF;
-  border-color: #EABEC3;
+  color: var(--rose-pink);
+  border-color: var(--rose-pink-darker);
 }
 
 .dark .hero-action-btn::before {
-  background: #EABEC3;
+  background: var(--rose-pink);
 }
 
 .dark .hero-action-btn:hover {
   color: #0A0F1B;
-  border-color: #FDD5DF;
+  border-color: var(--rose-pink-dark);
 }
 
 .hero-description {
@@ -511,7 +514,7 @@ body {
 }
 
 .scroll-down-btn {
-  background: linear-gradient(135deg, var(--dusty-pink) 0%, var(--dusty-pink-darker) 100%);
+  background: linear-gradient(135deg, var(--rose-pink) 0%, var(--rose-pink-darker) 100%);
   color: var(--white);
   border: none;
   padding: 0.5rem 1.2rem;
@@ -535,7 +538,7 @@ body {
 
 /* Project Buttons */
 .project-btn {
-  background: linear-gradient(135deg, var(--dusty-pink) 0%, var(--dusty-pink-darker) 100%);
+  background: linear-gradient(135deg, var(--rose-pink) 0%, var(--rose-pink-darker) 100%);
   color: var(--white);
   border: none;
   padding: 0.75rem 1.25rem; /* Increased for touch targets */
@@ -560,8 +563,8 @@ body {
 
 .project-btn-outline {
   background: var(--white);
-  color: var(--dusty-pink-darker);
-  border: 2px solid var(--dusty-pink);
+  color: var(--rose-pink-darker);
+  border: 2px solid var(--rose-pink);
   padding: calc(0.75rem - 2px) calc(1.25rem - 2px); /* Increased for touch targets */
   min-height: 44px;
   font-size: 0.875rem;
@@ -603,7 +606,7 @@ body {
 .cursor {
   display: inline-block;
   animation: blink 1s infinite;
-  color: var(--dusty-pink-darker);
+  color: var(--rose-pink-darker);
   font-weight: normal;
 }
 
