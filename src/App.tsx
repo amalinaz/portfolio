@@ -13,6 +13,7 @@ import './App.css'
 const Contact = lazy(() => import('./pages/Contact'))
 
 // Lazy load below-the-fold components for better initial load
+const ProjectDetail = lazy(() => import('./components/project/ProjectDetail'))
 const Projects = lazy(() => import('./components/section/Projects'))
 const Experience = lazy(() => import('./components/section/Experience'))
 const Skills = lazy(() => import('./components/section/Skills'))
@@ -96,8 +97,7 @@ function AppContent() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/contact" element={<Contact />} />
-              {/* Add your project routes here */}
-              {/* Example: <Route path="/projects/my-project" element={<MyProject />} /> */}
+              <Route path="/projects/:slug" element={<ProjectDetail />} />
             </Routes>
           </Suspense>
         </main>

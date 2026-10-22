@@ -26,12 +26,12 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
   return (
     <div className="rounded-lg shadow-lg p-8 mb-8" style={{ backgroundColor: themeColors.card.background }}>
       <div className="flex items-start gap-6 mb-6">
-        <img src={icon} alt={title} className="w-24 h-24 rounded-lg" loading="lazy" width="96" height="96" />
+         {icon && (<img src={icon} alt={title} className="w-24 h-24 rounded-lg" loading="lazy" width="96" height="96" />)}
         <div className="flex-1">
           <h1 className="text-4xl font-bold mb-2" style={{ color: themeColors.text.primary }}>{title}</h1>
           <p className="text-lg" style={{ color: themeColors.text.secondary }}>{subtitle}</p>
           <div className="flex gap-4 mt-4">
-            <a
+            {githubUrl && (<a
               href={githubUrl}
               target="_blank"
               aria-label="View source code on GitHub (opens in new tab)"
@@ -44,7 +44,7 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
             >
               <Github className="h-4 w-4" aria-hidden="true" />
               View Code
-            </a>
+            </a>)}
           </div>
         </div>
       </div>

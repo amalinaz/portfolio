@@ -1,9 +1,5 @@
-// Project icons module - add your project icon imports here
-// Example:
-// import MyProjectIcon from './MyProjectIcon.webp';
-//
-// export { MyProjectIcon };
-// export default { MyProjectIcon };
+import MyProjectIcon1 from './logo1.png';
+import MyProjectIcon2 from './logo2.png';
 
-export {};
-export default {};
+export { MyProjectIcon1, MyProjectIcon2};
+export default { MyProjectIcon1 , MyProjectIcon2};
