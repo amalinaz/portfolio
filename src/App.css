@@ -1,10 +1,11 @@
 @font-face {
-  font-family: 'Punk Babe';
-  src: url('./assets/punkbabe/PUNKBABE TRIAL.ttf') format('truetype');
+  font-family: 'Jane Austen';
+  src: url('./assets/jane_austen/JaneAust.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 
 @font-face {
   font-family: 'DK Crayonista';
@@ -209,7 +210,7 @@ body {
 }
 
 .signature-name {
-  font-family: 'Punk Babe', sans-serif;
+  font-family: 'Jane Austen', sans-serif;
   font-size: 2.5rem;
   background: linear-gradient(135deg, var(--color-pink-500) 0%, var(--color-pink-600) 100%);
   -webkit-background-clip: text;
