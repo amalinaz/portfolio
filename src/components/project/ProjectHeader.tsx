@@ -31,7 +31,7 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
           <h1 className="text-4xl font-bold mb-2" style={{ color: themeColors.text.primary }}>{title}</h1>
           <p className="text-lg" style={{ color: themeColors.text.secondary }}>{subtitle}</p>
           <div className="flex gap-4 mt-4">
-            <a
+            {githubUrl && (<a
               href={githubUrl}
               target="_blank"
               aria-label="View source code on GitHub (opens in new tab)"
@@ -44,7 +44,7 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
             >
               <Github className="h-4 w-4" aria-hidden="true" />
               View Code
-            </a>
+            </a>)}
           </div>
         </div>
       </div>
