@@ -8,7 +8,7 @@ import TechStack   from './TechStack'
 import TechnicalHighlights   from './TechnicalHighlights'
 import { MyProjectIcon1, MyProjectIcon2 }   from '../../assets/project_icons';
 import socialLinks from '@/config/socialLinks'
-import { Github, LucideCalendarCheck, LucideMessageCircle, LucideSparkles, LucideStar, LucideTicket, LucideUser, LucideList, LucideCirclePlus, type LucideIcon } from 'lucide-react';
+import {LucideCalendarCheck, LucideMessageCircle, LucideSparkles, LucideStar, LucideTicket, LucideUser, LucideList, LucideCirclePlus} from 'lucide-react';
 
 
 const projectsData = {
@@ -141,7 +141,7 @@ const screenshots = Object.entries(allScreenshots)
   return (
     <ProjectLayout>
       <ProjectHeader
-        icon={project.icon}
+        icon={project.icon ?? ''}
         title={project.title}
         subtitle={project.subtitle}
         githubUrl={project.githubUrl}
