@@ -144,7 +144,7 @@ const screenshots = Object.entries(allScreenshots)
         icon={project.icon ?? ''}
         title={project.title}
         subtitle={project.subtitle}
-        githubUrl={project.githubUrl ?? ''}
+        githubUrl={project.githubUrl}
         features={project.features}
       />
       
