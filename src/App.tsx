@@ -17,7 +17,6 @@ const ProjectDetail = lazy(() => import('./components/project/ProjectDetail'))
 const Projects = lazy(() => import('./components/section/Projects'))
 const Experience = lazy(() => import('./components/section/Experience'))
 const Skills = lazy(() => import('./components/section/Skills'))
-const Certifications = lazy(() => import('./components/section/Certifications'))
 const Footer = lazy(() => import('./components/Footer'))
 
 function HomePage() {
