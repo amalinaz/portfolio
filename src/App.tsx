@@ -77,9 +77,7 @@ function HomePage() {
       <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
         <Skills />
       </Suspense>
-      <Suspense fallback={<div className="h-64 flex items-center justify-center">Loading...</div>}>
-        <Certifications />
-      </Suspense>
+    
     </>
   )
 }

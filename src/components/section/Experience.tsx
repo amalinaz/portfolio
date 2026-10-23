@@ -7,35 +7,13 @@ const Experience = () => {
   const { isDarkMode } = useDarkMode();
   const themeColors = useThemeColors();
   const experiences = [
-    {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+     {
+      title: "Programmer Intern",
+      company: "PT Pro Sistimatika Automasi (PROSIA)",
+      location: "Jakarta, Indonesia",
+      period: "Feb 2025 - Feb 2026",
       description: [
-        "Description of your role and accomplishments",
-      ]
-    },
-    {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
-      description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
-      ]
-    },
-    {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
-      description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
+        "Worked on frontend and backend bug fixes and feature enhancements using React.js and Node.js, including database-to-UI integration and Excel export functionality. Collaborated with senior developers through Git-based workflows and code reviews.",
       ]
     }
   ];
