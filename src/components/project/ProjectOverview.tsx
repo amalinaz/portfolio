@@ -12,6 +12,10 @@ const ProjectOverview: React.FC<ProjectOverviewProps> = ({ paragraphs }) => {
 
   return (
     <>
+    <div>
+    <h2 className="text-2xl font-semibold mb-4" style={{ color: themeColors.text.primary }}>Development & Design</h2>
+    </div>
+    <div className="flex gap-4 mt-4">
       {paragraphs.map((paragraph, index) => (
         <p 
           key={index} 
@@ -21,6 +25,7 @@ const ProjectOverview: React.FC<ProjectOverviewProps> = ({ paragraphs }) => {
           {paragraph}
         </p>
       ))}
+      </div>
     </>
   );
 };

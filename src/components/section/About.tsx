@@ -223,10 +223,10 @@ const About = () => {
                 <button
                   className="hero-action-btn text-sm md:text-base px-4 py-2 md:px-5 md:py-2.5"
                   onClick={() => {
-                    window.open('/resume.pdf', '_blank');
+                    window.open('/CV.pdf', '_blank');
                   }}
                 >
-                  Resume →
+                  CV →
                 </button>
                 <Link
                   to="/contact"

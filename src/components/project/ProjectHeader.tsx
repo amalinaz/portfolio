@@ -1,17 +1,20 @@
 import React from 'react';
-import { Github, type LucideIcon } from 'lucide-react';
+import { Figma, Github, type LucideIcon } from 'lucide-react';
 import { useThemeColors } from '../../hooks/useThemeColors';
+import TechStack   from './TechStack'
 
 interface ProjectHeaderProps {
   icon: string;
   title: string;
   subtitle: string;
   githubUrl: string;
+  figmaUrl: string;
   features: {
     icon: LucideIcon;
     title: string;
     description: string;
   }[];
+  technologies: string[];
 }
 
 const ProjectHeader: React.FC<ProjectHeaderProps> = ({ 
@@ -19,7 +22,9 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
   title, 
   subtitle, 
   githubUrl, 
-  features 
+  figmaUrl,
+  features,
+  technologies
 }) => {
   const themeColors = useThemeColors();
 
@@ -45,6 +50,21 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
               <Github className="h-4 w-4" aria-hidden="true" />
               View Code
             </a>)}
+             {figmaUrl && (<a
+              href={figmaUrl}
+              target="_blank"
+              aria-label="View design in Figma (opens in new tab)"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg hover:opacity-80 transition-colors"
+              style={{ 
+                backgroundColor: themeColors.interactive.primary,
+                color: themeColors.text.pink
+              }}
+            >
+              <Figma className="h-4 w-4" aria-hidden="true" />
+              Figma
+            </a>)}
+            
           </div>
         </div>
       </div>
@@ -66,6 +86,9 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
             );
           })}
         </div>
+      </div>
+      <div className="flex gap-4 mt-4">  
+        <TechStack technologies={technologies}/>
       </div>
     </div>
   );

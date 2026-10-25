@@ -4,20 +4,22 @@ import ProjectLayout  from './ProjectLayout'
 import ProjectHeader  from './ProjectHeader'
 import ImageCarousel  from '../ImageCarousel'
 import ProjectOverview  from './ProjectOverview'
-import TechStack   from './TechStack'
 import TechnicalHighlights   from './TechnicalHighlights'
 import { MyProjectIcon1, MyProjectIcon2 }   from '../../assets/project_icons';
 import socialLinks from '@/config/socialLinks'
 import {LucideCalendarCheck, LucideMessageCircle, LucideSparkles, LucideStar, LucideTicket, LucideUser, LucideList, LucideCirclePlus} from 'lucide-react';
 
 
+
 const projectsData = {
+  
   'project-one': {
     icon: MyProjectIcon1,
     title: 'Key',
     technologies: ['Android Studio', 'Java', 'Figma', 'Visual Paradigm'],
-    subtitle: 'Thesis Project (Group of 2). A mobile application connecting customers with beauty service providers (makeup artists, nail artists, and eyelash artists), enabling users to discover, book, and manage beauty service reservations.',
+    subtitle: 'Key is an Android application connecting customers with beauty service providers, including makeup artists, nail artists, and eyelash artists. It helps users discover providers, book services, and manage reservations, with personalized provider recommendations using the Simple Additive Weighting (SAW) method.',
     githubUrl: socialLinks.repositories.projectOne,
+    figmaUrl: socialLinks.designs.projectOne,
     features: [
       {
         icon: LucideCalendarCheck,
@@ -41,15 +43,13 @@ const projectsData = {
       }
     ],
     overview: [
-      'Key is a mobile Android application designed to help users discover and book beauty services, including makeup, nail, and eyelash services.',
-      'The application provides beauty service recommendations using the Simple Additive Weighting (SAW) method based on criteria such as distance, rating, experience, and price.',
-      'This project was developed as a thesis project in a team of two, with my work focused on the Android application development, Firebase integration, provider-side UI/UX design, and system documentation.'
+      'This thesis project was developed by a team of two, with my work primarily focused on Android application development, Firebase integration, provider-side UI/UX design, and system documentation.'
     ],    
     highlights: [
       'Developed the Android application using Java and integrated Firebase for database management.',
       'Designed and refined the provider-side UI/UX in Figma.',
       'Created UML diagrams, including use case and sequence diagrams, using Visual Paradigm.',
-      'Handled the majority of the thesis documentation covering system design, implementation, and testing.'
+      'Authored the majority of the thesis documentation, covering system design, implementation, and testing.'
     ],
 
   }
@@ -60,6 +60,7 @@ const projectsData = {
       subtitle: 'Final Project for Mobile Programming Course (Group of 2). An Android mobile application for event ticket booking (concerts, community events, etc.)',
       githubUrl:socialLinks.repositories.projectTwo,
       technologies: ['Android Studio', 'Java'],
+      figmaUrl : null,
       features: [
       {
         icon: LucideUser,
@@ -78,7 +79,6 @@ const projectsData = {
     ],    
     highlights: [
       'Developed core app functionality including user authentication and ticket booking flow using Firebase (Authentication, Realtime Database, FCM)',
-      'Designed the application UI in Figma',
       'Implemented push notifications using Firebase Cloud Messaging (FCM) to notify users of booking updates'
     ],
     },
@@ -87,6 +87,7 @@ const projectsData = {
       title: 'Lost and Found',
       subtitle: 'Bootcamp Project (Group of 2). A web application developed to help users report and recover lost items. ',
       githubUrl: null,
+       figmaUrl :null,
       technologies: ['Laravel', 'PHP'],
       features: [
       {
@@ -145,11 +146,12 @@ const screenshots = Object.entries(allScreenshots)
         title={project.title}
         subtitle={project.subtitle}
         githubUrl={project.githubUrl ?? ''}
+        figmaUrl={project.figmaUrl ?? ''}
         features={project.features}
+        technologies={project.technologies}
       />
       
-      <TechStack technologies={project.technologies}/>
-
+    
       <ProjectOverview paragraphs={project.overview} />
       
       <TechnicalHighlights

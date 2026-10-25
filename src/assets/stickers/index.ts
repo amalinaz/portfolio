@@ -1,13 +1,13 @@
 // Sticker assets module - consolidates all sticker imports
 // Using optimized WebP versions for better performance
-import sticker1 from './sticker_1.webp';
-import sticker2 from './sticker_2.webp';
-import sticker3 from './sticker_3.webp';
-import sticker4 from './sticker_4.webp';
-import sticker5 from './sticker_5.webp';
+import sticker1 from './1.png';
+import sticker2 from './2.png';
+import sticker3 from './3.png';
+import sticker4 from './4.png';
+import sticker5 from './5.png';
 import sticker6 from './sticker_6.webp';
-import sticker7 from './sticker_7.webp';
-import sticker8 from './sticker_8.webp';
+import sticker7 from './7.png';
+import sticker8 from './8.png';
 import sticker9 from './sticker_9.webp';
 import sticker10 from './sticker_10.webp';
 import sticker11 from './sticker_11.webp';
@@ -35,8 +35,5 @@ export const stickers = [
   sticker15,
   sticker16,
 ];
-
-// All stickers are now WebP by default
-export const stickersWebp = stickers;
 
 export default stickers;

@@ -27,7 +27,7 @@ const Footer = () => {
               </span>
             </div>
             <div className="text-sm" style={{ color: isDarkMode ? themeColors.colors.white : themeColors.colors.pink[700] }}>
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Karin Amalina. All rights reserved.
             </div>
           </div>
 
@@ -88,7 +88,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="/resume.pdf"
+              href="/CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full transition-all duration-300 hover:scale-110"
@@ -97,7 +97,7 @@ const Footer = () => {
                 color: themeColors.colors.pink[500],
                 border: `1px solid ${themeColors.colors.pink[200]}`,
               }}
-              aria-label="View Resume"
+              aria-label="View CV"
             >
               <FileText size={20} />
             </a>
