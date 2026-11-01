@@ -48,7 +48,7 @@ const projectsData = {
     highlights: [
       'Developed the Android application using Java and integrated Firebase for database management.',
       'Designed and refined the provider-side UI/UX in Figma.',
-      'Created UML diagrams, including use case and sequence diagrams, using Visual Paradigm.',
+      'Created UML diagrams, including use case, activity, and sequence diagrams, using Visual Paradigm.',
       'Authored the majority of the thesis documentation, covering system design, implementation, and testing.'
     ],
 
@@ -74,12 +74,12 @@ const projectsData = {
       }
     ],
     overview: [
-      'An Android mobile application designed to simplify event ticket booking for concerts, community events, and other activities. The application allows users to explore upcoming events, view event details, and book tickets through a convenient and user-friendly interface.',
-      'This project was developed as a final project in a team of two, with my work focused on the Android application development, Firebase integration, and system documentation.'
+      'An Android mobile application designed to simplify event ticket booking for concerts, community events, and other activities. The application allows users to explore upcoming events, view event details, and book tickets through a convenient and user-friendly interface. This project was developed as a final project in a team of two, with my work focused on the Android application development, Firebase integration, and system documentation.'
     ],    
     highlights: [
-      'Developed core app functionality including user authentication and ticket booking flow using Firebase (Authentication, Realtime Database, FCM)',
-      'Implemented push notifications using Firebase Cloud Messaging (FCM) to notify users of booking updates'
+      'Implemented user authentication using Firebase Authentication.',
+      'Integrated Firebase Realtime Database to manage application data.',
+      'Developed the event ticket booking flow.'
     ],
     },
     'project-three': {
@@ -132,6 +132,20 @@ const allScreenshots = import.meta.glob<string>(
     import: 'default',
   }
 );
+const allDiagrams = import.meta.glob<string>(
+  '../../assets/project_diagrams/*/*.{png,jpg,jpeg,webp}',
+  {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  }
+);
+
+const diagrams = Object.entries(allDiagrams)
+  .filter(([path]) => path.includes(`/project_diagrams/${slug}/`))
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, image]) => image);
+
 
 const screenshots = Object.entries(allScreenshots)
   .filter(([path]) => path.includes(`/project_icons/${slug}/`))
@@ -151,19 +165,25 @@ const screenshots = Object.entries(allScreenshots)
         technologies={project.technologies}
       />
       
-    
-      <ProjectOverview paragraphs={project.overview} />
-      
-      <TechnicalHighlights
-        highlights={project.highlights}
-      />
-
       {screenshots.length > 0 && (
         <ImageCarousel
           images={screenshots}
+          title='Project Snapshots'
           projectName={project.title}
         />
       )}
+      {diagrams.length > 0 && (
+        <ImageCarousel
+          images={diagrams}
+          title='System Modeling'
+          projectName={project.title}
+        />
+      )}
+   
+       <ProjectOverview paragraphs={project.overview} />
+        <TechnicalHighlights
+                highlights={project.highlights}
+              />
 
     </ProjectLayout>
  

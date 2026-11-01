@@ -1,10 +1,10 @@
 // Main assets module - consolidates common assets
-import aboutMeJournalPng from './journalkarin.svg';
-import aboutMeJournalWebp800 from './journalkarin.svg';
-import aboutMeJournalWebp400 from './journalkarin.svg';
+import aboutMeJournalPng from './journalkarin.png';
+import aboutMeJournalWebp800 from './journalkarin.png';
+import aboutMeJournalWebp400 from './journalkarin.png';
 
-import profile1svg from './profile1.svg';
-import profile2svg from './profile2.svg';
+import profile1svg from './profile1.png';
+import profile2svg from './profile2.png';
 
 const profile1 = profile1svg;
 const profile2 = profile2svg;

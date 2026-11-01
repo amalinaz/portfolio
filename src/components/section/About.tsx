@@ -19,6 +19,7 @@ const About = () => {
   const themeColors = useThemeColors();
 
   const roles = [
+    'System Analyst',
     'Software Engineer',
     'Frontend Developer',
   ];

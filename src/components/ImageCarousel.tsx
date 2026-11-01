@@ -6,9 +6,10 @@ import { useThemeColors } from '../hooks/useThemeColors';
 interface ImageCarouselProps {
   images: string[];
   projectName: string;
+  title?: string;
 }
 
-const ImageCarousel = ({ images, projectName }: ImageCarouselProps) => {
+const ImageCarousel = ({ images, projectName, title }: ImageCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isEnlarged, setIsEnlarged] = useState(false);
   const { isDarkMode } = useDarkMode();
@@ -35,7 +36,7 @@ const ImageCarousel = ({ images, projectName }: ImageCarouselProps) => {
       backgroundColor: themeColors.card.background,
       boxShadow: isDarkMode ? '0 0 20px rgba(0, 0, 0, 0.3)' : '0 0 20px rgba(0, 0, 0, 0.15)'
     }}>
-      <h2 className="text-2xl font-semibold mb-6" style={{ color: themeColors.text.primary }}>Project Snapshots</h2>
+      <h2 className="text-2xl font-semibold mb-6" style={{ color: themeColors.text.primary }}>{title}</h2>
       
       <div className="relative">
         {/* Main Image Display with Sliding Animation */}

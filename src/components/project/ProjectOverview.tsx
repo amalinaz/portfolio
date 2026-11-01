@@ -19,8 +19,8 @@ const ProjectOverview: React.FC<ProjectOverviewProps> = ({ paragraphs }) => {
       {paragraphs.map((paragraph, index) => (
         <p 
           key={index} 
-          className={`leading-relaxed ${index < paragraphs.length - 1 ? 'mb-4' : ''}`} 
-          style={{ color: isDarkMode ? themeColors.colors.white : themeColors.text.secondary }}
+          className={`leading-relaxed ${index < paragraphs.length - 1 ? 'mb-8' : ''}`} 
+          style={{ color: isDarkMode ? themeColors.colors.white : themeColors.text.secondary } }
         >
           {paragraph}
         </p>
